@@ -1,0 +1,116 @@
+/********************
+	 common.css
+	ver1.0
+	2024.7.14
+	임수경
+
+********************/
+@charset "UTF-8";
+@import "reset.css";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* common */
+html,body {font-family:"Pretendard", "SF Pro Display", sans-serif;color:#000;font-size:15px;}
+html {overflow-y:auto; overflow-x:auto;letter-spacing:0;}
+html.is-opened {overflow:hidden;}
+img {max-width:100%;}
+input[type=text], input[type=tel], input[type=email], input[type=password], input[type=search] {width:50vw;height:6.9444vw;padding:0 1.3888vw;box-sizing:border-box;border:0;border-radius:1.1111vw;box-sizing:border-box;color:#333;font-size:2.7777vw;}
+label:hover {cursor:pointer;}
+.blind {font-size:0;line-height:0;width:0;height:0;opacity:0;}
+.clear:after {content:"";display:block;clear:both;}
+.container {position:relative;width:100%;}
+.pc-only {}
+.mo-only {display:none !important;}
+.paging {display:none;}
+@media (max-width:720px) {
+
+}
+
+.wrap {width:100%;max-width:720px;margin:0 auto;background:#c00000;text-align:center;box-shadow: 0 0 14px 5px rgba(0,0,0,0.3);}
+.intro-wrap {padding-bottom:20.8333vw;}
+.intro-wrap .vs-top {position:relative;}
+.intro-wrap .vs-top #confetti {position:absolute;top:0;left:0;right:0;bottom:0;width:100vw;height:113.888vw;}
+.intro-wrap .vs-top img {position:relative;z-index:1;}
+.intro-wrap dl.intro {text-align:center;color:#fff;}
+.intro-wrap dl.intro dt {padding:2.7777vw 0;font-size:4.1666vw;font-weight:700;}
+.intro-wrap dl.intro dd {font-size:3.0555vw;line-height:4.7222vw;}
+.intro-wrap dl.intro dd strong {font-weight:700;}
+.intro-wrap label {display:block;text-align:center;margin-top:3.472vw;}
+.intro-wrap label span {display:inline-block;width:12.5vw;padding-right:10px;font-size:4.1666vw;color:#fff;font-weight:700;text-align:right;}
+.intro-wrap .chk-wrap {padding:5.5555vw 0 0 0;text-align:center;}
+.intro-wrap .chk-wrap ul {display:inline-block;}
+.intro-wrap .chk-wrap li {text-align:left;}
+.intro-wrap .chk-wrap li+li {margin-top:2.7777vw;}
+.intro-wrap .chk-wrap li label {position:relative;display:inline-block;text-align:left;margin:0;}
+.intro-wrap .chk-wrap li label span {width:auto;font-size:3.0555vw;font-weight:normal;}
+.intro-wrap .chk-wrap li label span:before {content:"";display:inline-block;width:2.7777vw;height:2.7777vw;background:url(../images/icon_check_off.svg) no-repeat center center/cover;vertical-align:middle;margin-right:10px;}
+.intro-wrap .chk-wrap li label input[type=checkbox]:checked + span:before {background:url(../images/icon_check_on.svg) no-repeat center center/cover;}
+.intro-wrap .chk-wrap li label input[type=checkbox] {width:1px;height:1px;opacity:0;position:absolute;top:0;left:0;}
+.intro-wrap .chk-wrap li a {display:inline-block;color:#fff;font-size:3.0555vw;text-shadow:0 0 5px #000;}
+.intro-wrap .btn-area {position:relative;text-align:center;margin-top:6.9444vw;}
+.intro-wrap .btn-area .btn-area-inner {position:relative;display:inline-block;}
+.intro-wrap .btn-commit {display:inline-block;width:41.6666vw;border-radius:3.4722vw;overflow:hidden;box-shadow: 5px 5px 14px 5px rgba(0,0,0,0.3);position:relative;z-index:3;}
+.intro-wrap .btn-commit:active {transform:scale(0.9);}
+
+.dim {position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.3);display:none;}
+.layerpopup {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:90vw;max-width:650px;border-radius:10px;background:#fff;display:none;}
+.layerpopup h3 {padding:15px 0;border-bottom:1px solid #ddd;}
+.layerpopup .layer-cont {padding:15px;}
+.layerpopup .layer-cont .layer-cont-inner {max-height:80vh;}
+.layerpopup .layer-close {position:absolute;top:0;right:0;width:50px;height:50px;background:url(../images/btn_pop_close.svg) no-repeat 50% 50% /20px;}
+html.is-opened .dim,
+html.is-opened .layerpopup.is-opened {display:block;}
+.btn-particles {width:34.7222vw;height:34.7222vw;position:absolute;top:50%;right:50%;transform:translateY(-50%);border-radius:50%;color:#eee;font-family:monospace;z-index:1;}
+.btn-particles .shape {position:absolute;width:13.8888vw;height:13.8888vw;transform:scale(0.8);}
+.btn-particles .cir {position:absolute;border-radius:50%;z-index:5;}
+@media (min-width:721px){
+	.wrap {margin:50px auto;border-radius:20px;overflow:hidden;}
+	input[type=text], input[type=tel], input[type=email], input[type=password], input[type=search] {width:360px;padding:0 10px;height:50px;font-size:20px;border-radius:8px;}
+	.intro-wrap .vs-top #confetti {width:720px;height:820px;}
+	.intro-wrap {padding-bottom:150px;}
+	.intro-wrap dl.intro dt {padding:20px 0;font-size:30px;}
+	.intro-wrap dl.intro dd {font-size:22px;line-height:34px;}
+	.intro-wrap label {margin-top:25px;}
+	.intro-wrap label span {width:90px;font-size:30px;}
+	.intro-wrap .chk-wrap {padding:40px 0 0 0;}
+	.intro-wrap .chk-wrap li + li {margin-top:20px;}
+	.intro-wrap .chk-wrap li label {margin:0;}
+	.intro-wrap .chk-wrap li label span {width:auto;font-size:22px;}
+	.intro-wrap .chk-wrap li label span:before {width:20px;height:20px;background-size:20px !important;}
+	.intro-wrap .chk-wrap li a {font-size:22px;}
+	.intro-wrap .btn-area  {margin-top:50px;}
+	.intro-wrap .btn-commit  {width:300px;border-radius:25px;}
+	.btn-particles {width:250px;height:250px;top:100%;}
+	.btn-particles .shape {width:100px;height:100px;}
+}

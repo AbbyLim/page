@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+	<link rel="stylesheet" type="text/css" href="../resources/css/swiper.jquery.min.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
+	<script src="../resources/js/jquery-3.6.0.min.js"></script>
+	<script src="../resources/js/swiper-bundle.min.js"></script>
+	<script src="../resources/js/common.js"></script>
+	<title>안녕하세요 구독자님!</title>
+</head>
+<body>
+<div class="wrap">
+	<div class="intro-wrap">
+		 <div class="vs-top">
+			<canvas id="confetti" width="512" height="512"></canvas>
+			<script src="../resources/js/confetti.js"></script>
+			<div class="intro-txt"><img src="../resources/images/txt_intro.png" alt="안녕하세요 구독자님!" /></div>
+			<div class="intro-img"><img src="../resources/images/img_intro.png" alt="대체텍스트" /></div>
+		 </div>
+		 <dl class="intro">
+			<dt>항상 채널을 시청해주셔서 감사합니다.</dt>
+			<dd>
+				<div>지금 보신 영상과 관련된 <strong>정보 및 내용을 개별적으로 받아</strong> 보시기 위해서는</div>
+				<div>아래 안내에 따라 정보 받으실 연락처 및 내용을 간단하게 남겨주시면</div>
+				<div>확인 후 순차적으로 연락드리겠습니다.</div>
+			</dd>
+		 </dl>
+		 <form>
+			<label>
+				<span>이름</span>
+				<input type="text" class="ip-txt" />
+			</label>
+			<label>
+				<span>연락처</span>
+				<input type="tel" class="ip-tel" />
+			</label>
+			<div class="chk-wrap">
+				<ul>
+					<li>
+						<label>
+							<input type="checkbox" class="cbx-chkAll" name="chkAll" />
+							<span>전체선택</span>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="cbx" name="chk" />
+							<span>[필수] 개인정보 제3자 제공 동의</span>
+						</label>
+						<a href="javascript:;" data-link="#agree1" class="btn-layer">(보기)</a>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="cbx" name="chk" />
+							<span>[필수] 마케팅 수신 동의</span>
+						</label>
+						<a href="javascript:;" data-link="#agree2" class="btn-layer">(보기)</a>
+					</li>
+				</ul>
+			</div>
+			<div class="btn-area">
+				<div class="btn-area-inner">
+					<button type="button" class="btn-commit"><img src="../resources/images/btn_apply.jpg" alt="신청하기" /></button>
+					<div class="btn-particles"></div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+		 </form>
+	</div>
+
+	<div class="dim"></div>
+
+	<!-- 개인정보 제3자 제공 동의 -->
+	<div class="layerpopup" id="agree1">
+		<h3>[필수] 개인정보 제3자 제공 동의</h3>
+		<div class="layer-cont">
+			<div class="layer-cont-inner">
+				[필수] 개인정보 제3자 제공 동의 내용필요<br />
+				[필수] 개인정보 제3자 제공 동의 내용필요<br />
+				[필수] 개인정보 제3자 제공 동의 내용필요<br />
+				[필수] 개인정보 제3자 제공 동의 내용필요<br />
+				[필수] 개인정보 제3자 제공 동의 내용필요<br />
+				[필수] 개인정보 제3자 제공 동의 내용필요<br />
+				[필수] 개인정보 제3자 제공 동의 내용필요<br />
+				[필수] 개인정보 제3자 제공 동의 내용필요<br />
+			</div>
+		</div>
+		<a href="javascript:;"class="layer-close"><span class="blind">닫기</span></a>
+	</div>
+
+	<!-- 마케팅 수신 동의 -->
+	<div class="layerpopup" id="agree2">
+		<h3>[필수] 마케팅 수신 동의</h3>
+		<div class="layer-cont">
+			<div class="layer-cont-inner">
+				[필수] 마케팅 수신 동의 내용필요
+			</div>
+		</div>
+		<a href="javascript:;"class="layer-close"><span class="blind">닫기</span></a>
+	</div>
+</div>
+</body>
+</html>

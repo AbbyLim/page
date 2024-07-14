@@ -1,0 +1,78 @@
+/******************** 
+	reset
+	ver1.0
+	2022.07.08
+	임수경
+
+********************/
+
+@charset "UTF-8";
+
+html { margin: 0; padding: 0; font-size: 14px; line-height: 20px;-webkit-tap-highlight-color: transparent;}
+body { width: 100%;height: 100%; margin: 0; padding: 0; font-weight: inherit; color: #313130; border: none; -webkit-box-sizing: border-box; box-sizing: border-box; word-break: keep-all; overflow-wrap: break-word; }
+section, article, aside, nav, header, menu, footer { display: block; margin: 0; padding: 0; }
+button { font-family: inherit; font-weight: inherit; color: inherit; display: block; background: none; margin: 0; padding: 0; border: none; cursor: pointer; }
+img { border: none; vertical-align: top;}
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: inherit; }
+p { margin: 0; padding: 0; }
+ol, ul, dl, li, dt, dd { display: block; margin: 0; padding: 0; list-style: none; }
+textarea { margin: 0; padding: 0; border: none; resize: none; font-family: inherit; font-weight: inherit; color: inherit; }
+pre { margin: 0; padding: 0; font-family: inherit; font-weight: inherit; color: inherit; }
+input { margin: 0; padding: 0; border: none; font-family: inherit; font-weight: inherit; color: inherit; vertical-align: baseline; }
+select { font-family: inherit; font-weight: inherit; color: inherit; }
+
+input:focus, textarea:focus { outline-style: none; }
+input::-webkit-input-placeholder { color: #BEBEBE;font-size:18px; }
+input.default::-webkit-input-placeholder { color: #BEBEBE; }
+textarea::-webkit-input-placeholder { color: #BEBEBE; }
+
+input:-ms-input-placeholder { color: #8a8d91;font-size:18px; }
+input.default:-ms-input-placeholder { color: #BEBEBE; }
+textarea:-ms-input-placeholder { color: #BEBEBE; }
+
+input::-ms-input-placeholder { color: #BEBEBE;font-size:18px; }
+input.default::-ms-input-placeholder { color: #BEBEBE; }
+textarea::-ms-input-placeholder { color: #BEBEBE; }
+
+input::placeholder { color: #BEBEBE; font-size:18px;}
+input.default::placeholder { color: #BEBEBE; }
+textarea::placeholder { color: #BEBEBE; }
+
+/*input[type=search]::-ms-clear,
+input[type=search]::-ms-reveal {-webkit-appearance: none;width:48px;height:48px;border-radius:0 14px 14px 0;background:url(../../images/icon-reset.svg) center center no-repeat;background-size:22px;}
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration{-webkit-appearance: none;width:48px;height:48px;border-radius:0 14px 14px 0;background:url(../../images/icon-reset.svg) center center no-repeat;background-size:22px;}
+*/
+
+input::-ms-clear,
+input::-ms-reveal {display:none;}
+/* 크롬의 경우 */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {display:none;}
+
+a { text-decoration: none; outline: none; color: inherit; }
+a:hover { text-decoration: none; }
+address, em { font-style: normal; }
+strong { font-weight: 700; }
+table { table-layout: fixed; border-collapse: collapse; border-spacing: 0; vertical-align: baseline; word-break: break-all; }
+th { font-weight: normal; text-align: left; }
+body { -webkit-text-size-adjust: 100%; }
+button { appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+input { appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+input[type='checkbox'] { -webkit-appearance: checkbox; -webkit-border-radius: 0; }
+input[type='radio'] { -webkit-appearance: radio; -webkit-border-radius: 0; }
+select { appearance: none; -webkit-appearance: none; -moz-appearance: none; background: none; }
+select::-ms-expand { display: none; }
+/*::-webkit-scrollbar { display: none; }
+::-webkit-scrollbar:vertical { background-color: rgba(255, 255, 255, 0); opacity: 0; }
+::-webkit-scrollbar:horizontal { background-color: rgba(255, 255, 255, 0); opacity: 0; }
+::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0); opacity: 0; }
+::-webkit-scrollbar-track { background-color: rgba(255, 255, 255, 0); opacity: 0; }
+*/
+@media (max-width:720px) {
+	overflow-x: hidden;
+}
