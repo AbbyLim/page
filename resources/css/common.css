@@ -83,11 +83,12 @@ label:hover {cursor:pointer;}
 .intro-wrap .btn-commit {display:inline-block;width:41.6666vw;border-radius:3.4722vw;overflow:hidden;box-shadow: 5px 5px 14px 5px rgba(0,0,0,0.3);position:relative;z-index:3;}
 .intro-wrap .btn-commit:active {transform:scale(0.9);}
 
-.dim {position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.3);display:none;}
-.layerpopup {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:90vw;max-width:650px;border-radius:10px;background:#fff;display:none;}
+.dim {position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.3);display:none;z-index:10;}
+.layerpopup {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:90vw;max-width:650px;border-radius:10px;background:#fff;display:none;z-index:20;}
 .layerpopup h3 {padding:15px 0;border-bottom:1px solid #ddd;}
 .layerpopup .layer-cont {padding:15px;}
-.layerpopup .layer-cont .layer-cont-inner {max-height:80vh;}
+.layerpopup .layer-cont .layer-cont-inner {max-height:80vh;text-align:left;overflow:auto;}
+.layerpopup .layer-cont .layer-cont-inner pre {width:100%;}
 .layerpopup .layer-close {position:absolute;top:0;right:0;width:50px;height:50px;background:url(../images/btn_pop_close.svg) no-repeat 50% 50% /20px;}
 html.is-opened .dim,
 html.is-opened .layerpopup.is-opened {display:block;}
